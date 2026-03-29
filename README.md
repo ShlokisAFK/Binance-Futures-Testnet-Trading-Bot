@@ -11,7 +11,7 @@ A Python CLI application to place Market and Limit orders on Binance Futures Tes
 - Order confirmation prompt before execution
 - Structured logging to file (`logs/trading_bot.log`)
 - Clean error messages for invalid input and API errors
-- Secure — API keys never hardcoded, loaded from local config
+- Secure API keys never hardcoded, loaded from local config
 
 ## Project Structure
 
@@ -33,7 +33,7 @@ trading_bot/
 **1. Clone the repo**
 ```bash
 git clone https://github.com/ShlokisAFK/Binance-Futures-Testnet-Trading-Bot
-cd trading-bot
+cd Binance-Futures-Testnet-Trading-Bot
 ```
 
 **2. Install dependencies**
@@ -85,7 +85,7 @@ Order placed successfully!
 
 ## Assumptions
 
-- Testnet only — uses https://testnet.binancefuture.com
-- Minimum order notional is $100 (Binance requirement) — use quantity ≥ 0.002 for BTCUSDT
+- Testnet only uses https://testnet.binancefuture.com
+- Minimum order notional is $100 (Binance requirement) use quantity ≥ 0.002 for BTCUSDT
 - Server time is fetched from Binance directly to avoid local clock sync issues
 - Log file is created automatically at `logs/trading_bot.log`
